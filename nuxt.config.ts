@@ -33,6 +33,11 @@ export default defineNuxtConfig({
     dirs: ['composables/**/*', 'utils/**/*', 'plugins/**/*'],
   },
   css: ['~/assets/css/ionic.css'],
+  ionic: {
+    integrations: {
+      pwa: false,
+    },
+  },
   tailwindcss: {
     exposeConfig: true,
   },
