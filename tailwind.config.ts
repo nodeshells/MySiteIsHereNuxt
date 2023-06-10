@@ -9,8 +9,5 @@ module.exports = {
     injectPosition: 'first',
     viewer: true,
   },
-  content: [
-    './pages/**/*.{html,js,vue}',
-    './components/**/*.{html,js,vue}',
-  ],
+  content: ['./pages/**/*.{html,js,vue}', './components/**/*.{html,js,vue}'],
 };
