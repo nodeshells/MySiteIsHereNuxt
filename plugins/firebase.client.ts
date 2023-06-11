@@ -1,5 +1,4 @@
 import { initializeApp } from '@firebase/app';
-import { defineNuxtPlugin, useRuntimeConfig } from '#app';
 import { getAnalytics } from '@firebase/analytics';
 
 export default defineNuxtPlugin(() => {

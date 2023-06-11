@@ -21,16 +21,19 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'MySite Is Here!',
-      meta: [{ name: 'description', content: 'My site is here!!' }],
+      htmlAttrs: { lang: 'ja' },
+      meta: [{ name: 'description', content: 'My site is here!!'}],
     },
   },
   modules: ['@nuxtjs/ionic', 'nuxt-vitest', '@nuxtjs/tailwindcss'],
-  components: {
-    global: true,
-    dirs: ['~/components'],
-  },
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
   imports: {
-    dirs: ['composables/**/*', 'utils/**/*', 'plugins/**/*'],
+    dirs: ['composables/**/*', 'utils/**/*'],
   },
   css: ['~/assets/css/ionic.css'],
   ionic: {
