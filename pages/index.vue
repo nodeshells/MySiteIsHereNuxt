@@ -2,8 +2,8 @@
 </script>
 
 <template>
-  <div class="px-8 pt-2 bg-[#202020] h-screen overflow-y-scroll">
-    <div class="bg-fixed sticky top-0">
+  <div class="px-8 pt-2 bg-[#1a1919] h-screen overflow-y-scroll">
+    <div class="bg-fixed sticky top-0 pb-4">
       <CSiteTitle/>
       <CProfileIconAndName class="mt-4"/>
     </div>
@@ -23,6 +23,7 @@
         <div class="text-xl font-bold text-white">経歴</div>
         <ion-icon class="text-gray-500 contrast-0 brightness-0" size="small" slot="end" :icon="ioniconsChevronForward"/>
       </ion-item>
+      <hr class="h-px my-8 border-0 bg-gray-500 contrast-0 brightness-0 opacity-20">
     </div>
   </div>
 </template>
